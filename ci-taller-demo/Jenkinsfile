@@ -1,0 +1,63 @@
+pipeline {
+    agent any
+    tools {
+        maven 'maven'
+    }
+    stages {
+        stage('Checkout') {
+            steps {
+                git url: 'https://github.com/ulisespallares888/Taller-CI-CD.git', branch: 'main'
+            }
+        }
+        stage('Build') {
+            steps {
+                dir('ci-taller-demo') {
+                    sh 'mvn clean package'
+                 }
+            }
+        }
+        stage('Test') {
+            steps {
+                dir('ci-taller-demo') {
+                    sh 'mvn test'
+                    }
+                  }
+            }
+
+       stage('Deploy') {
+            steps {
+                dir('ci-taller-demo') {
+                    // Detenemos contenedor si ya existe
+                        sh '''
+                            docker stop demo-app || true
+                            docker rm demo-app || true
+                            docker rmi demo-app || true
+                        '''
+                        // Build de imagen
+                        sh 'docker build -t demo-app .'
+                        // Run del contenedor
+                        sh 'docker run -d --name demo-app -p 8080:8080 demo-app'
+                    }
+                }
+            }
+        }
+
+
+     post {
+            success {
+                sh '''
+                    curl -s -X POST "https://api.telegram.org/bot7859277225:AAFFKDo8cJRrdCjo1o_Mp5qqxnP8c7zvSZg/sendMessage" \
+                    -d chat_id=6104407892 \
+                    -d text="✅ Éxito: Pipeline completado correctamente en Jenkins."
+                '''
+            }
+
+            failure {
+                sh '''
+                    curl -s -X POST "https://api.telegram.org/bot7859277225:AAFFKDo8cJRrdCjo1o_Mp5qqxnP8c7zvSZg/sendMessage" \
+                    -d chat_id=6104407892 \
+                    -d text="❌ Error: Falló el pipeline en Jenkins. Revisar logs."
+                '''
+            }
+        }
+    }
