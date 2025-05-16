@@ -13,7 +13,8 @@ public class DemoApplication {
         SpringApplication.run(DemoApplication.class, args);
     }
 
-    // Un comentario2
+    // Un comentario
+    // Otro comentario
 
     @GetMapping("/hello")
     public String hello() {
