@@ -17,6 +17,22 @@ pipeline {
             }
         }
 
+         stage('Confirmar despliegue') {
+                    steps {
+                        script {
+                            def userInput = input(
+                                id: 'DespliegueConfirmacion', message: '¿Deseas desplegar a producción?', parameters: [
+                                    choice(choices: ['Sí', 'No'], description: 'Selecciona una opción', name: 'Desplegar')
+                                ]
+                            )
+
+                            if (userInput == 'No') {
+                                error("El despliegue ha sido cancelado por el usuario.")
+                            }
+                        }
+                    }
+                }
+
        stage('Deploy') {
             steps {
                 dir('ci-taller-demo') {
