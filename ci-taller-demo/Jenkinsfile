@@ -45,7 +45,7 @@ pipeline {
                         // Build de imagen
                         sh 'docker build -t demo-app .'
                         // Run del contenedor
-                        sh 'docker run -d --name demo-app -p 8080:8081 demo-app'
+                        sh 'docker run -d --name demo-app -p 8082:8080 demo-app'
                     }
                 }
             }
