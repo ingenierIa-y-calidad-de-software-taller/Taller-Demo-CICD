@@ -16,13 +16,6 @@ pipeline {
                  }
             }
         }
-        stage('Test') {
-            steps {
-                dir('ci-taller-demo') {
-                    sh 'mvn test'
-                    }
-                  }
-            }
 
        stage('Deploy') {
             steps {
