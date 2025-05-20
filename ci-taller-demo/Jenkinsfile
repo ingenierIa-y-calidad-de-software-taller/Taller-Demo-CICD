@@ -9,7 +9,7 @@ pipeline {
                 git url: 'https://github.com/ingenierIa-y-calidad-de-software-taller/Taller-Demo-CICD.git', branch: 'main'
             }
         }
-        stage('Build') {
+        stage('Compile') {
             steps {
                 dir('ci-taller-demo') {
                     sh 'mvn clean compile'
