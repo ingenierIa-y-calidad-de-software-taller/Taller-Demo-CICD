@@ -33,16 +33,16 @@ pipeline {
 
 
          stage('Confirmar despliegue') {
-                    steps {
-                        script {
-                            def userInput = input(
+            steps {
+                script {
+                    def userInput = input(
                                 id: 'DespliegueConfirmacion', message: '¿Deseas desplegar a producción?', parameters: [
                                     choice(choices: ['Sí', 'No'], description: 'Selecciona una opción', name: 'Desplegar')
                                 ]
                             )
 
                             if (userInput == 'No') {
-                                error("El despliegue ha sido cancelado por el usuario.")
+                        error("El despliegue ha sido cancelado por el usuario.")
                             }
                         }
                     }
@@ -66,22 +66,27 @@ pipeline {
             }
         }
 
-
      post {
-            success {
-                sh '''
-                    curl -s -X POST "https://api.telegram.org/bot7859277225:AAFFKDo8cJRrdCjo1o_Mp5qqxnP8c7zvSZg/sendMessage" \
-                    -d chat_id=6104407892 \
-                    -d text="✅ Éxito: Pipeline completado correctamente en Jenkins."
-                '''
-            }
+        success {
+            withCredentials([
+                    string(credentialsId: 'TELEGRAM_BOT_TOKEN', variable: 'BOT_TOKEN'),
+                    string(credentialsId: 'TELEGRAM_CHAT_ID', variable: 'CHAT_ID')
+                ])
+                {
+                sh """
+                        curl -s -X POST "https://api.telegram.org/bot${BOT_TOKEN}/sendMessage" \\
+                        -d chat_id=${CHAT_ID}  \\
+                        -d text="✅ Éxito: Pipeline completado correctamente en Jenkins."
+                    """
+                }
 
             failure {
-                sh '''
-                    curl -s -X POST "https://api.telegram.org/bot7859277225:AAFFKDo8cJRrdCjo1o_Mp5qqxnP8c7zvSZg/sendMessage" \
-                    -d chat_id=6104407892 \
+                sh """
+                    curl -s -X POST "https://api.telegram.org/bot${BOT_TOKEN}/sendMessage" \\
+                    -d chat_id=${CHAT_ID} \\
                     -d text="❌ Error: Falló el pipeline en Jenkins. Revisar logs."
-                '''
+                """
             }
         }
     }
+}
