@@ -12,10 +12,25 @@ pipeline {
         stage('Build') {
             steps {
                 dir('ci-taller-demo') {
-                    sh 'mvn clean package'
+                    sh 'mvn clean compile'
                  }
             }
         }
+        stage('Test') {
+            steps {
+                dir('ci-taller-demo') {
+                    sh 'mvn test'
+                 }
+            }
+        }
+        stage('Build') {
+            steps {
+                dir('ci-taller-demo') {
+                    sh 'mvn package'
+                 }
+            }
+        }
+
 
          stage('Confirmar despliegue') {
                     steps {
