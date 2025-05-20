@@ -66,11 +66,15 @@ pipeline {
             }
         }
 
+
+
+     post {
+
         always {
-                junit 'ci-taller-demo/target/surefire-reports/*.xml'
+            junit 'ci-taller-demo/target/surefire-reports/*.xml'
 
                 script {
-                    def result = sh(script: '''
+                def result = sh(script: '''
                         PASSED=0
                         FAILED=0
                         SKIPPED=0
@@ -89,7 +93,7 @@ pipeline {
                 }
             }
 
-     post {
+
         success {
                 withCredentials([
                 string(credentialsId: 'TELEGRAM_BOT_TOKEN', variable: 'BOT_TOKEN'),
