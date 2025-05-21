@@ -39,8 +39,8 @@ pipeline {
                 expression { env.DEPLOY == 'true' }
             }
                 steps {
-                        dir('ci-taller-demo') {
-                        sh '''
+                dir('ci-taller-demo') {
+                    sh '''
                             docker stop demo-app || true
                             docker rm demo-app || true
                             docker rmi demo-app || true
@@ -54,43 +54,59 @@ pipeline {
 
 
     post {
-
         always {
             script {
                 sh '''
-                    grep "Tests run:" ci-taller-demo/target/surefire-reports/com.example.demo.DemoApplicationTests.txt > test_result_summary.txt || echo "No se encontraron resultados." > test_result_summary.txt
-                    '''
+                grep "Tests run:" ci-taller-demo/target/surefire-reports/*.txt > test_result_summary.txt || echo "No se encontraron resultados." > test_result_summary.txt
+            '''
             }
         }
 
-
         success {
-                withCredentials([
+            withCredentials([
                 string(credentialsId: 'TELEGRAM_BOT_TOKEN', variable: 'BOT_TOKEN'),
                 string(credentialsId: 'TELEGRAM_CHAT_ID', variable: 'CHAT_ID')
-                ])
+            ]) {
                 script {
                     def testSummary = readFile('test_result_summary.txt').trim()
                     sh """
                         curl -s -X POST "https://api.telegram.org/bot${BOT_TOKEN}/sendMessage" \\
                         -d chat_id=${CHAT_ID} \\
-                        -d text="✅  Éxito: Pipeline completado correctamente en Jenkins.\\n📊  ${testSummary}"
+                        -d text="✅ Éxito: Pipeline completado correctamente en Jenkins.\\n📊 ${testSummary}"
                     """
                 }
+            }
         }
 
         failure {
+            withCredentials([
+                string(credentialsId: 'TELEGRAM_BOT_TOKEN', variable: 'BOT_TOKEN'),
+                string(credentialsId: 'TELEGRAM_CHAT_ID', variable: 'CHAT_ID')
+            ]) {
+                script {
+                    def testSummary = fileExists('test_result_summary.txt') ? readFile('test_result_summary.txt').trim() : "Sin resultados."
+                    sh """
+                        curl -s -X POST "https://api.telegram.org/bot${BOT_TOKEN}/sendMessage" \\
+                        -d chat_id=${CHAT_ID} \\
+                        -d text="❌ Error: Falló el pipeline en Jenkins.\\n📊 ${testSummary}"
+                    """
+                }
+            }
+        }
+
+        aborted {
                 withCredentials([
                 string(credentialsId: 'TELEGRAM_BOT_TOKEN', variable: 'BOT_TOKEN'),
                 string(credentialsId: 'TELEGRAM_CHAT_ID', variable: 'CHAT_ID')
-            ])
-            script {
-                    def testSummary = fileExists('test_result_summary.txt') ? readFile('test_result_summary.txt').trim() : "Sin resultados."
-                sh """
-                    curl -s -X POST "https://api.telegram.org/bot${BOT_TOKEN}/sendMessage" \\
-                    -d chat_id=${CHAT_ID} \\
-                    -d text="❌  Error: Falló el pipeline en Jenkins.\\n📊  ${testSummary}"
-                """
+            ]) {
+                    script {
+                        def testSummary = fileExists('test_result_summary.txt') ? readFile('test_result_summary.txt').trim() : "Sin resultados."
+                    sh """
+                        curl -s -X POST "https://api.telegram.org/bot${BOT_TOKEN}/sendMessage" \\
+                        -d chat_id=${CHAT_ID} \\
+                        -d text="⚠️ Pipeline abortado por el usuario.\\n📊 ${testSummary}"
+                    """
+                }
             }
         }
     }
