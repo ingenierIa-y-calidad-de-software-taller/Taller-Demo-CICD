@@ -23,15 +23,15 @@ pipeline {
             steps {
                 script {
                     def userInput = input(
-                id: 'DespliegueConfirmacion',
-                message: '¿Deseas desplegar a producción?',
-                parameters: [
-                    choice(choices: ['Sí', 'No'], description: 'Selecciona una opción', name: 'Desplegar')
-                ]
-            )
-            env.DEPLOY = (userInput == 'Sí') ? 'true' : 'false'
+                        id: 'DespliegueConfirmacion',
+                        message: '¿Deseas desplegar a producción?',
+                        parameters: [
+                            choice(choices: ['Sí', 'No'], description: 'Selecciona una opción', name: 'Desplegar')
+                        ]
+                    )
+                    env.DEPLOY = (userInput == 'Sí') ? 'true' : 'false'
                     }
-                }
+            }
          }
 
        stage('Deploy') {
@@ -53,16 +53,16 @@ pipeline {
         }
 
 
-     post {
+    post {
 
         always {
             script {
-                def result = sh(
-                script: "grep 'Tests run:' ci-taller-demo/target/surefire-reports/com.example.demo.DemoApplicationTests.txt || echo 'No se encontraron resultados.'",
-                returnStdout: true
+                def resultado = sh(
+                    script: "grep 'Tests run:' ci-taller-demo/target/surefire-reports/com.example.demo.DemoApplicationTests.txt || echo 'No se encontraron resultados.'",
+                    returnStdout: true
                 ).trim()
-                env.TEST_RESULT_MESSAGE = result
-                }
+                env.TEST_RESULT_MESSAGE = resultado
+            }
         }
 
 
@@ -70,13 +70,13 @@ pipeline {
                 withCredentials([
                 string(credentialsId: 'TELEGRAM_BOT_TOKEN', variable: 'BOT_TOKEN'),
                 string(credentialsId: 'TELEGRAM_CHAT_ID', variable: 'CHAT_ID')
-            ]) {
+                ]) {
                     sh """
                     curl -s -X POST "https://api.telegram.org/bot${BOT_TOKEN}/sendMessage" \\
                     -d chat_id=${CHAT_ID} \\
                     -d text="✅  Éxito: Pipeline completado correctamente en Jenkins. \n📊  ${TEST_RESULT_MESSAGE}"
                 """
-            }
+                }
         }
 
         failure {
