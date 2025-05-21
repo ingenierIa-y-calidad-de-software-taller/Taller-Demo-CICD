@@ -59,7 +59,10 @@ pipeline {
 
         always {
             script {
-                def result = readFile('ci-taller-demo/target/surefire-reports/com.example.demo.DemoApplicationTests.txt').trim()
+                def result = sh(
+                script: "grep 'Tests run:' ci-taller-demo/target/surefire-reports/com.example.demo.DemoApplicationTests.txt || echo 'No se encontraron resultados.'",
+                returnStdout: true
+                ).trim()
                 env.TEST_RESULT_MESSAGE = result
                 }
         }
