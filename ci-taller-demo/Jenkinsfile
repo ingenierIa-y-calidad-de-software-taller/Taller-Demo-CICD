@@ -23,36 +23,34 @@ pipeline {
             steps {
                 script {
                     def userInput = input(
-                                id: 'DespliegueConfirmacion', message: '¿Deseas desplegar a producción?', parameters: [
-                                    choice(choices: ['Sí', 'No'], description: 'Selecciona una opción', name: 'Desplegar')
-                                ]
-                            )
-
-                            if (userInput == 'No') {
-                        error("El despliegue ha sido cancelado por el usuario.")
-                            }
-                        }
+                id: 'DespliegueConfirmacion',
+                message: '¿Deseas desplegar a producción?',
+                parameters: [
+                    choice(choices: ['Sí', 'No'], description: 'Selecciona una opción', name: 'Desplegar')
+                ]
+            )
+            env.DEPLOY = (userInput == 'Sí') ? 'true' : 'false'
                     }
                 }
+         }
 
        stage('Deploy') {
-            steps {
-                dir('ci-taller-demo') {
-                    // Detenemos contenedor si ya existe
+            when {
+                expression { env.DEPLOY == 'true' }
+            }
+                steps {
+                        dir('ci-taller-demo') {
                         sh '''
                             docker stop demo-app || true
                             docker rm demo-app || true
                             docker rmi demo-app || true
                         '''
-                        // Build de imagen
                         sh 'docker build -t demo-app .'
-                        // Run del contenedor
                         sh 'docker run -d --name demo-app -p 8082:8080 demo-app'
                     }
                 }
             }
         }
-
 
 
      post {
