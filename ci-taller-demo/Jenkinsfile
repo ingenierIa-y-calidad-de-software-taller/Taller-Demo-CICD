@@ -72,7 +72,7 @@ pipeline {
                     sh """
                         curl -s -X POST "https://api.telegram.org/bot${BOT_TOKEN}/sendMessage" \\
                         -d chat_id=${CHAT_ID} \\
-                        -d text="✅  Éxito: Pipeline completado correctamente en Jenkins.\n \n📊  ${testSummary}"
+                        -d text="✅  Éxito: Pipeline completado correctamente en Jenkins.\n📊  ${testSummary}"
                     """
                 }
             }
@@ -88,7 +88,7 @@ pipeline {
                     sh """
                         curl -s -X POST "https://api.telegram.org/bot${BOT_TOKEN}/sendMessage" \\
                         -d chat_id=${CHAT_ID} \\
-                        -d text="❌  Error: Falló el pipeline en Jenkins.\n \n📊  ${testSummary}"
+                        -d text="❌  Error: Falló el pipeline en Jenkins.\n📊  ${testSummary}"
                     """
                 }
             }
@@ -104,7 +104,7 @@ pipeline {
                     sh """
                         curl -s -X POST "https://api.telegram.org/bot${BOT_TOKEN}/sendMessage" \\
                         -d chat_id=${CHAT_ID} \\
-                        -d text="⚠️  Pipeline abortado por el usuario.\n \n📊  ${testSummary}"
+                        -d text="⚠️  Pipeline abortado por el usuario.\n📊  ${testSummary}"
                     """
                 }
             }
