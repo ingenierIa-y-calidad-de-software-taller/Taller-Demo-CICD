@@ -61,24 +61,10 @@ pipeline {
             junit 'ci-taller-demo/target/surefire-reports/*.xml'
 
                 script {
-                def result = sh(script: '''
-                        PASSED=0
-                        FAILED=0
-                        SKIPPED=0
-
-                        for file in ci-taller-demo/target/surefire-reports/*.xml; do
-                            [ -f "$file" ] || continue
-                            PASSED=$((PASSED + $(grep -o 'testsuite.*tests="\\?\\([0-9]\\+\\)"' "$file" | sed -E 's/.*tests="([0-9]+)".*/\\1/')))
-                            FAILED=$((FAILED + $(grep -o 'failures="\\?\\([0-9]\\+\\)"' "$file" | sed -E 's/.*failures="([0-9]+)".*/\\1/')))
-                            SKIPPED=$((SKIPPED + $(grep -o 'skipped="\\?\\([0-9]\\+\\)"' "$file" | sed -E 's/.*skipped="([0-9]+)".*/\\1/')))
-                        done
-
-                        echo "Tests: $PASSED, Fallos: $FAILED, Saltados: $SKIPPED"
-                    ''', returnStdout: true).trim()
-
-                    env.TEST_RESULT_MESSAGE = result
+                def result = readFile('ci-taller-demo/target/surefire-reports/*.txt').trim()
+                env.TEST_RESULT_MESSAGE = result
                 }
-            }
+        }
 
 
         success {
