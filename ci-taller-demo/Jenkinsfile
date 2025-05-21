@@ -58,10 +58,8 @@ pipeline {
      post {
 
         always {
-            junit 'ci-taller-demo/target/surefire-reports/*.xml'
-
-                script {
-                def result = readFile('ci-taller-demo/target/surefire-reports/*.txt').trim()
+            script {
+                def result = readFile('ci-taller-demo/target/surefire-reports/com.example.demo.DemoApplicationTests.txt').trim()
                 env.TEST_RESULT_MESSAGE = result
                 }
         }
