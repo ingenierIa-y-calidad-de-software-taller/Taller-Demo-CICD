@@ -1,0 +1,3 @@
+# Ignorar Sonar
+.scannerwork/
+target/

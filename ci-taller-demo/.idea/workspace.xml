@@ -4,7 +4,46 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4cfab72f-f7fc-4326-95d7-04b62e9c8395" name="Changes" comment="Hello word OK" />
+    <list default="true" id="4cfab72f-f7fc-4326-95d7-04b62e9c8395" name="Changes" comment="Hello word OK">
+      <change afterPath="$PROJECT_DIR$/gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/report-task.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/report-task.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/scanner-report/activerules.pb" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/scanner-report/activerules.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/scanner-report/analysis-cache2.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/scanner-report/analysis.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/scanner-report/analysis.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/scanner-report/changesets-2.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/scanner-report/changesets-3.pb" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/scanner-report/changesets-3.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/scanner-report/changesets-4.pb" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/scanner-report/changesets-4.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/scanner-report/component-1.pb" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/scanner-report/component-1.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/scanner-report/component-2.pb" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/scanner-report/component-2.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/scanner-report/component-3.pb" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/scanner-report/component-3.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/scanner-report/component-4.pb" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/scanner-report/component-4.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/scanner-report/context-props.pb" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/scanner-report/context-props.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/scanner-report/coverages-3.pb" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/scanner-report/coverages-3.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/scanner-report/measures-2.pb" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/scanner-report/measures-2.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/scanner-report/measures-3.pb" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/scanner-report/measures-3.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/scanner-report/measures-4.pb" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/scanner-report/measures-4.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/scanner-report/metadata.pb" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/scanner-report/metadata.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/scanner-report/source-2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/scanner-report/source-2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/scanner-report/source-3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/scanner-report/source-3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/scanner-report/source-4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/scanner-report/source-4.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/scanner-report/symbols-3.pb" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/scanner-report/symbols-3.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/scanner-report/symbols-4.pb" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/scanner-report/symbols-4.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/scanner-report/syntax-highlightings-2.pb" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/scanner-report/syntax-highlightings-2.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/scanner-report/syntax-highlightings-3.pb" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/scanner-report/syntax-highlightings-3.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/scanner-report/syntax-highlightings-4.pb" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/scanner-report/syntax-highlightings-4.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/scanner-report/telemetry-entries.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.DemoApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.DemoApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.DemoApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.DemoApplicationTests.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,7 +102,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager" selected="Docker.docker-compose.yml.jenkins: Compose Deployment">
+  <component name="RunManager" selected="Application.DemoApplication">
     <configuration name="DemoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.demo.DemoApplication" />
       <module name="demo" />
