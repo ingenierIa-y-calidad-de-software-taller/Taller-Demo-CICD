@@ -5,44 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4cfab72f-f7fc-4326-95d7-04b62e9c8395" name="Changes" comment="Hello word OK">
-      <change afterPath="$PROJECT_DIR$/gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demo-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sonar/report-task.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/report-task.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sonar/scanner-report/activerules.pb" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/scanner-report/activerules.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sonar/scanner-report/analysis-cache2.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sonar/scanner-report/analysis.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/scanner-report/analysis.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sonar/scanner-report/changesets-2.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sonar/scanner-report/changesets-3.pb" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/scanner-report/changesets-3.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sonar/scanner-report/changesets-4.pb" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/scanner-report/changesets-4.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sonar/scanner-report/component-1.pb" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/scanner-report/component-1.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sonar/scanner-report/component-2.pb" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/scanner-report/component-2.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sonar/scanner-report/component-3.pb" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/scanner-report/component-3.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sonar/scanner-report/component-4.pb" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/scanner-report/component-4.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sonar/scanner-report/context-props.pb" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/scanner-report/context-props.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sonar/scanner-report/coverages-3.pb" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/scanner-report/coverages-3.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sonar/scanner-report/measures-2.pb" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/scanner-report/measures-2.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sonar/scanner-report/measures-3.pb" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/scanner-report/measures-3.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sonar/scanner-report/measures-4.pb" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/scanner-report/measures-4.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sonar/scanner-report/metadata.pb" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/scanner-report/metadata.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sonar/scanner-report/source-2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/scanner-report/source-2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sonar/scanner-report/source-3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/scanner-report/source-3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sonar/scanner-report/source-4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/scanner-report/source-4.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sonar/scanner-report/symbols-3.pb" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/scanner-report/symbols-3.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sonar/scanner-report/symbols-4.pb" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/scanner-report/symbols-4.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sonar/scanner-report/syntax-highlightings-2.pb" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/scanner-report/syntax-highlightings-2.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sonar/scanner-report/syntax-highlightings-3.pb" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/scanner-report/syntax-highlightings-3.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sonar/scanner-report/syntax-highlightings-4.pb" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/scanner-report/syntax-highlightings-4.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sonar/scanner-report/telemetry-entries.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.DemoApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.DemoApplicationTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.DemoApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.DemoApplicationTests.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +21,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="SCRUM-7-Pueba-para-Sonarqube" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -80,28 +48,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.DemoApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.docker-compose.yml.demo-app: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.docker-compose.yml.jenkins2: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.docker-compose.yml.jenkins: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.docker-compose.yml.sonarqube: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.docker-compose.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.DemoApplicationTests.helloEndpointReturnsHelloWorld.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.demo [package].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Ulises/Factultad/Facultad/2025/Ingeniería de Software/Taller de CICD/Taller-CI-CD/ci-taller-demo&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.DemoApplication.executor": "Run",
+    "Docker.docker-compose.yml.demo-app: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml.jenkins2: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml.jenkins: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml.sonarqube: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
+    "JUnit.DemoApplicationTests.helloEndpointReturnsHelloWorld.executor": "Run",
+    "Maven.demo [clean].executor": "Run",
+    "Maven.demo [package].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Ulises/Factultad/Facultad/2025/Ingeniería de Software/Taller de CICD/Taller-CI-CD/ci-taller-demo",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Application.DemoApplication">
     <configuration name="DemoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.demo.DemoApplication" />
@@ -174,11 +143,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DemoApplicationTests.helloEndpointReturnsHelloWorld" />
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.sonarqube: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.jenkins: Compose Deployment" />
         <item itemvalue="Application.DemoApplication" />
-        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
-        <item itemvalue="JUnit.DemoApplicationTests.helloEndpointReturnsHelloWorld" />
-        <item itemvalue="Docker.docker-compose.yml.sonarqube: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
