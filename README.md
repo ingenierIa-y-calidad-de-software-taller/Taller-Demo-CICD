@@ -43,3 +43,8 @@ Para aprobar el taller se debe cumplir con los siguientes puntos:
 | Git + GitHub     | Repositorio de código                       |
 | JUnit            | Pruebas automatizadas                       |
 | SonarQube        | Inspección de calidad de código (opcional)  |
+
+## Esquema
+
+
+![ ](https://imgur.com/a/hEadQ6g)
