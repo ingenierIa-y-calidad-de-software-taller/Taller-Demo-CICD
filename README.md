@@ -1,6 +1,5 @@
 ![Auto Assign](https://github.com/ingenierIa-y-calidad-de-software-taller/demo-repository/actions/workflows/auto-assign.yml/badge.svg)
-
-![Proof HTML](https://github.com/ingenierIa-y-calidad-de-software-taller/demo-repository/actions/workflows/proof-html.yml/badge.svg)
+![Sonarqube-Cloud](https://github.com/ingenierIa-y-calidad-de-software-taller/demo-repository/actions/workflows/sonarcloud.yml/badge.svg)
 
 # Taller: Integración y Entrega Continua
 
