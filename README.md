@@ -47,4 +47,4 @@ Para aprobar el taller se debe cumplir con los siguientes puntos:
 ## Esquema
 
 
-![ ](https://imgur.com/a/hEadQ6g)
+![ ](https://i.imgur.com/XLPmBkJ.png)
