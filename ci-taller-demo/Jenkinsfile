@@ -57,19 +57,18 @@ pipeline {
         always {
             script {
                 sh '''
-                    > test_result_summary.txt
-
-                    if grep "Tests run:" ci-taller-demo/target/surefire-reports/com.example.demo.DemoApplicationTests.txt >> test_result_summary.txt; then
-                        sed -i '1i\\n==== Prueba de humo (DemoApplicationTests) ====' test_result_summary.txt
+                    echo "==== Prueba de humo (DemoApplicationTests) ====" > test_result_summary.txt
+                    if [ -f ci-taller-demo/target/surefire-reports/com.example.demo.DemoApplicationTests.txt ]; then
+                        grep "Tests run:" ci-taller-demo/target/surefire-reports/com.example.demo.DemoApplicationTests.txt >> test_result_summary.txt
                     else
-                        echo "==== Prueba de humo (DemoApplicationTests) ====" >> test_result_summary.txt
                         echo "No se encontraron resultados." >> test_result_summary.txt
                     fi
 
-                    if grep "Tests run:" ci-taller-demo/target/surefire-reports/com.example.demo.controllers.HelloWorldControllerTest.txt >> test_result_summary.txt; then
-                        echo -e "\\n==== Resultado HelloWorldControllerTest ====" >> test_result_summary.txt
+                    echo "" >> test_result_summary.txt
+                    echo "==== Resultado HelloWorldControllerTest ====" >> test_result_summary.txt
+                    if [ -f ci-taller-demo/target/surefire-reports/com.example.demo.controllers.HelloWorldControllerTest.txt ]; then
+                        grep "Tests run:" ci-taller-demo/target/surefire-reports/com.example.demo.controllers.HelloWorldControllerTest.txt >> test_result_summary.txt
                     else
-                        echo -e "\\n==== Resultado HelloWorldControllerTest ====" >> test_result_summary.txt
                         echo "No se encontraron resultados." >> test_result_summary.txt
                     fi
                 '''
