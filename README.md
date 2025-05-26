@@ -28,7 +28,7 @@ Para aprobar el taller se debe cumplir con los siguientes puntos:
   - Una modificación de código que cause fallar la build.
   - Corrección del error y reintento exitoso.
   - Ejecución en el entorno de entrega.
-  - Imagen con logos de las herramientas usadas.
+  - Imagen con logos de las herramientas usadas
 
 ---
 
