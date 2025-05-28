@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class DemoApplication {
 
-    // Comentario nuevo para probar mas tests para sonarqube
+    // Comentario para probar todo el CICD
 
     public static void main(String[] args) {
         SpringApplication.run(DemoApplication.class, args);
