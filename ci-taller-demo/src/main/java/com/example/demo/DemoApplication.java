@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class DemoApplication {
 
-    // Comentario para probar todo el CICD
+    // Comentario para probar todo el CICD2
 
     public static void main(String[] args) {
         SpringApplication.run(DemoApplication.class, args);
