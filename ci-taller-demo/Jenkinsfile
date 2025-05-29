@@ -18,6 +18,22 @@ pipeline {
             }
         }
 
+        stage('SonarQube Analysis') {
+            steps {
+                withCredentials([string(credentialsId: 'SONAR_TOKEN', variable: 'SONAR_TOKEN')]) {
+                    dir('ci-taller-demo') {
+                        sh '''
+                    mvn clean verify sonar:sonar \
+                    -Dsonar.projectKey=ingenierIa-y-calidad-de-software-taller_Taller-Demo-CICD \
+                    -Dsonar.token=${SONAR_TOKEN} \
+                    -Dsonar.host.url=https://sonarcloud.io \
+                    -X
+                    '''
+                    }
+                }
+            }
+        }
+
 
          stage('Confirmar despliegue') {
             steps {
