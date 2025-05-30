@@ -1,0 +1,37 @@
+name: Deploy a Producción
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    env:
+      BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Build Docker image
+        run: docker build -t demo-app .
+        working-directory: ci-taller-demo
+
+      - name: Stop and remove container if exists
+        run: |
+          docker stop demo-app || true
+          docker rm demo-app || true
+          docker rmi demo-app || true
+        working-directory: ci-taller-demo
+
+      - name: Run container
+        run: docker run -d --name demo-app -p 8082:8080 demo-app
+        working-directory: ci-taller-demo
+
+      - name: Notificación Telegram - deploy exitoso
+        run: |
+          curl -s -X POST "https://api.telegram.org/bot${BOT_TOKEN}/sendMessage" \
+          -d chat_id=${CHAT_ID} \
+          -d text="🚀  Deploy manual realizado con éxito desde GitHub Actions."
