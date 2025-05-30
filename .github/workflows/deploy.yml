@@ -1,4 +1,5 @@
 name: Deploy a Producción
+run: mvn clean package -DskipTests
 
 on:
   workflow_dispatch:
