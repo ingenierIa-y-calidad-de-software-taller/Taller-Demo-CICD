@@ -1,5 +1,4 @@
 name: Deploy a Producción
-run: mvn clean package -DskipTests
 
 on:
   workflow_dispatch:
@@ -15,6 +14,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
+        run: mvn clean package -DskipTests
 
       - name: Build Docker image
         run: docker build -t demo-app .
