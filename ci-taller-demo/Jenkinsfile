@@ -5,20 +5,23 @@ pipeline {
     }
     stages {
 
-        //    stage('Checkout') {
-    //        steps {
-    //            git url: 'https://github.com/ingenierIa-y-calidad-de-software-taller/Taller-Demo-CICD.git', branch: 'main'
-    //        }
-    //    }
-
-
         stage('Build') {
             steps {
                 dir('ci-taller-demo') {
-                    sh 'mvn clean package'
-                 }
+                    sh 'mvn clean compile'
+                }
             }
         }
+
+        stage('Test') {
+            steps {
+                dir('ci-taller-demo') {
+                    sh 'mvn test'
+                }
+            }
+        }
+
+
     /*
         stage('SonarQube Analysis') {
             steps {
@@ -52,29 +55,8 @@ pipeline {
             }
          }
 
-       /*
 
-       stage('Deploy') {
-            when {
-                expression { env.DEPLOY == 'true' }
-            }
-                steps {
-                dir('ci-taller-demo') {
-                    sh '''
-                            docker stop demo-app || true
-                            docker rm demo-app || true
-                            docker rmi demo-app || true
-                        '''
-                        sh 'docker build -t demo-app .'
-                        sh 'docker run -d --name demo-app -p 8082:8080 demo-app'
-                    }
-                }
-            }
-    }
-
-    */
-
-    stage('Deploy') {
+    stage('Deploy on Render') {
         when {
             expression { env.DEPLOY == 'true' }
         }
