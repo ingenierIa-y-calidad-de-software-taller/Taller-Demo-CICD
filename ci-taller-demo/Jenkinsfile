@@ -83,11 +83,11 @@ pipeline {
                     string(credentialsId: 'RENDER_API_KEY', variable: 'RENDER_API_KEY'),
                     string(credentialsId: 'RENDER_SERVICE_ID', variable: 'RENDER_SERVICE_ID')
                 ]) {
-                    sh """
-                        curl -X POST https://api.render.com/deploy/srv-${RENDER_SERVICE_ID} \\
-                            -H 'Authorization: Bearer ${RENDER_API_KEY}' \\
-                            -H 'Accept: application/json'
-                    """
+                    sh '''
+                        curl -X POST https://api.render.com/deploy/srv-$RENDER_SERVICE_ID \
+                            -H "Authorization: Bearer $RENDER_API_KEY" \
+                            -H "Accept: application/json"
+                    '''
                 }
             }
         }
