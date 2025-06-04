@@ -6,12 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="4cfab72f-f7fc-4326-95d7-04b62e9c8395" name="Changes" comment="Corregir el error">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jacoco.exec" beforeDir="false" afterPath="$PROJECT_DIR$/target/jacoco.exec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.DemoApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.DemoApplicationTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.controllers.HelloWorldControllerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.controllers.HelloWorldControllerTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.DemoApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.DemoApplicationTests.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.controllers.HelloWorldControllerTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.controllers.HelloWorldControllerTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/jenkins/Jenkinsfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/jenkins/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jenkins/Dockerfile" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +65,7 @@
     "Docker.docker-compose.yml.jenkins: Compose Deployment.executor": "Run",
     "Docker.docker-compose.yml.sonarqube: Compose Deployment.executor": "Run",
     "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
-    "JUnit.DemoApplicationTests.executor": "Debug",
+    "JUnit.DemoApplicationTests.executor": "Run",
     "JUnit.DemoApplicationTests.helloEndpointReturnsHelloWorld.executor": "Run",
     "JUnit.HelloWorldControllerTest.executor": "Debug",
     "Maven.demo [clean].executor": "Run",
@@ -96,11 +93,14 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Ulises\Factultad\Facultad\2025\Ingeniería de Software\Taller_CI_CD\demo-repository\ci-taller-demo\jenkins" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.example.demo.controllers" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DemoApplicationTests">
+  <component name="RunManager" selected="Application.DemoApplication">
     <configuration name="DemoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.demo.DemoApplication" />
       <module name="demo" />
@@ -176,11 +176,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DemoApplication" />
+        <item itemvalue="JUnit.DemoApplicationTests" />
         <item itemvalue="JUnit.HelloWorldControllerTest" />
         <item itemvalue="JUnit.DemoApplicationTests.helloEndpointReturnsHelloWorld" />
-        <item itemvalue="JUnit.DemoApplicationTests" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
-        <item itemvalue="Application.DemoApplication" />
       </list>
     </recent_temporary>
   </component>
