@@ -28,7 +28,7 @@ Para aprobar el taller se debe cumplir con los siguientes puntos:
   - Una modificación de código que cause fallar la build.
   - Corrección del error y reintento exitoso.
   - Ejecución en el entorno de entrega.
-  - Imagen con logos de las herramientas usadas
+  - Imagen con logos de las herramientas usadas.
 
 ---
 
@@ -42,9 +42,9 @@ Para aprobar el taller se debe cumplir con los siguientes puntos:
 | Docker           | Contenerización del entorno de ejecución    |
 | Git + GitHub     | Repositorio de código                       |
 | JUnit            | Pruebas automatizadas                       |
-| SonarQube        | Inspección de calidad de código (opcional)  |
+| SonarQube        | Inspección de calidad de código             |
 
 ## Esquema
 
 
-![ ](https://i.imgur.com/XLPmBkJ.png)
+![ ](https://i.imgur.com/PF5rFre.png)
