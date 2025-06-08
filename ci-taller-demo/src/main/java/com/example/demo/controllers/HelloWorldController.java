@@ -8,7 +8,7 @@ public class HelloWorldController {
 
     // GET: Obtener el mensaje
     @GetMapping("/hello")
-    public ResponseEntity<String> Get() {
+    public ResponseEntity<String> get() {
         return ResponseEntity.ok("HelloWorld");
     }
 }
