@@ -15,9 +15,10 @@ public class HelloWorldControllerTest {
     private MockMvc mockMvc;
 
     @Test
-    void testSimple() throws Exception {
+    void getTest() throws Exception {
         mockMvc.perform(get("/hello"))
                 .andExpect(status().isOk())
                 .andExpect(content().string("HelloWorld"));
     }
+
 }
