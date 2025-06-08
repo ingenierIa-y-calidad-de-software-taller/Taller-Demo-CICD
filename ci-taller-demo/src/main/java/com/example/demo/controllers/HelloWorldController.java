@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/hello") // Prefijo común para todos los endpoints
 public class HelloWorldController {
 
-    private String message = "Hello world1";
+    private String message = "Hello world";
 
     // GET: Obtener el mensaje
     @GetMapping
