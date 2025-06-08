@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4cfab72f-f7fc-4326-95d7-04b62e9c8395" name="Changes" comment="Corregir el error">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="4cfab72f-f7fc-4326-95d7-04b62e9c8395" name="Changes" comment="Corregir el error" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,41 +52,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.DemoApplication.executor": "Run",
-    "Docker.docker-compose.yml.demo-app: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.jenkins2: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.jenkins: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.sonarqube: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
-    "JUnit.DemoApplicationTests.executor": "Run",
-    "JUnit.DemoApplicationTests.helloEndpointReturnsHelloWorld.executor": "Run",
-    "JUnit.HelloWorldControllerTest.executor": "Run",
-    "JUnit.HelloWorldControllerTest.get.executor": "Run",
-    "JUnit.HelloWorldControllerTest.getTest.executor": "Run",
-    "JUnit.HelloWorldControllerTest.testGetMessage.executor": "Run",
-    "Maven.demo [clean].executor": "Run",
-    "Maven.demo [compile].executor": "Run",
-    "Maven.demo [install].executor": "Run",
-    "Maven.demo [package].executor": "Run",
-    "Maven.demo [site].executor": "Run",
-    "Maven.demo [test].executor": "Run",
-    "Maven.demo [validate].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Ulises/Factultad/Facultad/2025/Ingeniería de Software/Taller de CICD/Taller-CI-CD/ci-taller-demo",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.DemoApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.demo-app: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.jenkins2: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.jenkins: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.sonarqube: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DemoApplicationTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DemoApplicationTests.helloEndpointReturnsHelloWorld.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.HelloWorldControllerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.HelloWorldControllerTest.get.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.HelloWorldControllerTest.getTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.HelloWorldControllerTest.testGetMessage.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.demo [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.demo [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.demo [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.demo [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.demo [site].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.demo [test].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.demo [validate].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Ulises/Factultad/Facultad/2025/Ingeniería de Software/Taller de CICD/Taller-CI-CD/ci-taller-demo&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />

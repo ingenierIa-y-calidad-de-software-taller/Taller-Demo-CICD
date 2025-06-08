@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class HelloWorldController {
 
-    // GET: Obtener el mensaje
+    // GET: Get message
     @GetMapping("/hello")
     public ResponseEntity<String> get() {
         return ResponseEntity.ok("HelloWorld");
