@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4cfab72f-f7fc-4326-95d7-04b62e9c8395" name="Changes" comment="Corregir el error" />
+    <list default="true" id="4cfab72f-f7fc-4326-95d7-04b62e9c8395" name="Changes" comment="Corregir el error">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/models/Usuario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controllers/HelloWorldController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controllers/HelloWorldController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/demo/controllers/HelloWorldControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/demo/controllers/HelloWorldControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/controllers/HelloWorldController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/controllers/HelloWorldController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/demo/controllers/HelloWorldControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/example/demo/controllers/HelloWorldControllerTest.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,8 +26,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Dockerfile" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -65,6 +77,7 @@
     &quot;JUnit.HelloWorldControllerTest.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.HelloWorldControllerTest.get.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.HelloWorldControllerTest.getTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.HelloWorldControllerTest.getUsuarioTest.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.HelloWorldControllerTest.testGetMessage.executor&quot;: &quot;Run&quot;,
     &quot;Maven.demo [clean].executor&quot;: &quot;Run&quot;,
     &quot;Maven.demo [compile].executor&quot;: &quot;Run&quot;,
@@ -80,25 +93,30 @@
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Ulises/Factultad/Facultad/2025/Ingeniería de Software/Taller de CICD/Taller-CI-CD/ci-taller-demo&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Ulises/Factultad/Facultad/2025/Ingeniería de Software/Taller_CI_CD/demo-repository/ci-taller-demo/src/main/java&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Ulises\Factultad\Facultad\2025\Ingeniería de Software\Taller_CI_CD\demo-repository\ci-taller-demo\src\main\java" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Ulises\Factultad\Facultad\2025\Ingeniería de Software\Taller_CI_CD\demo-repository\ci-taller-demo\src\main\" />
       <recent name="D:\Ulises\Factultad\Facultad\2025\Ingeniería de Software\Taller_CI_CD\demo-repository\ci-taller-demo\jenkins" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.example.demo.controllers" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.HelloWorldControllerTest.getTest">
+  <component name="RunManager" selected="Application.DemoApplication">
     <configuration name="DemoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.demo.DemoApplication" />
       <module name="demo" />
@@ -159,7 +177,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HelloWorldControllerTest.testGetMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HelloWorldControllerTest.getUsuarioTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <extension name="coverage">
         <pattern>
@@ -169,7 +187,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.example.demo.controllers" />
       <option name="MAIN_CLASS_NAME" value="com.example.demo.controllers.HelloWorldControllerTest" />
-      <option name="METHOD_NAME" value="testGetMessage" />
+      <option name="METHOD_NAME" value="getUsuarioTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -183,11 +201,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.HelloWorldControllerTest.getTest" />
         <item itemvalue="Application.DemoApplication" />
-        <item itemvalue="JUnit.HelloWorldControllerTest.get" />
+        <item itemvalue="JUnit.HelloWorldControllerTest.getUsuarioTest" />
         <item itemvalue="JUnit.HelloWorldControllerTest" />
-        <item itemvalue="JUnit.HelloWorldControllerTest.testGetMessage" />
+        <item itemvalue="JUnit.HelloWorldControllerTest.getTest" />
+        <item itemvalue="JUnit.HelloWorldControllerTest.get" />
       </list>
     </recent_temporary>
   </component>

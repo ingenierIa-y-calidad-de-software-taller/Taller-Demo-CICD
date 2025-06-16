@@ -14,11 +14,13 @@ public class HelloWorldControllerTest {
     @Autowired
     private MockMvc mockMvc;
 
-    @Test
-    void getTest() throws Exception {
-        mockMvc.perform(get("/hello"))
-                .andExpect(status().isOk())
-                .andExpect(content().string("HelloWorld"));
-    }
+@Test
+void getUsuarioTest() throws Exception {
 
+    mockMvc.perform(get("/usuario"))
+            .andExpect(status().isOk())
+            .andExpect(jsonPath("$.nombre").value("John"))
+            .andExpect(jsonPath("$.apellido").value("Doe"))
+            .andExpect(jsonPath("$.edad").value(30));
+    }
 }
